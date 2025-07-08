@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(155, 223, 225);
+        }
+        .res{
+            align-items: center;
+            text-align: center;
+            margin: 10% 10% 10% 10%;
+            color: green;
+            font-size: 30px;
+        }
+        h1{
+            color: brown;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="res">
+        <h1>Result</h1>
+        <br>
+        {% if results %}
+            <h2>The Prediction is {{ results }}</h2>
+        {% endif %}
+    </div>
+    
+</body>
+</html>
